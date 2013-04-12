@@ -1,0 +1,28 @@
+/* Way to change font...
+$baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen)*/
+
+/*Change nav bar background color/color*/
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+
+@import 'bootstrap';
+
+body {
+	padding-top: 60px;
+}
+@import 'bootstrap-responsive';
+
+/*Remove the line under the top nav*/
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+}
+.footer {
+
+	margin-top: 50px;
+	color: $grayLight;
+	a {
+		color: $gray;
+	}
+}
